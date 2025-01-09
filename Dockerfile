@@ -18,7 +18,7 @@ ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/do
 
 RUN chmod +x install-php-extensions
     
-RUN install-php-extensions \
+RUN ./install-php-extensions \
     mysqli \
     pdo \
     pdo_mysql \
