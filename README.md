@@ -2,7 +2,7 @@
 A container to run caddy web server  
   
 Usage: Create via image on Dockerhub:  
-`` docker run -d -p 80:80 -p 443:443 -v /path/to/website:/opt/src xosadmin/docker-caddy:php ``  
+`` docker run -d -p 80:80 -p 443:443 -v /path/to/website:/opt/src xosadmin/docker-caddy:latest ``  
   
 ### Notes:  
 - The docker image with ``php`` tag includes php 8.4 support  
