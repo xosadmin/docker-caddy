@@ -55,4 +55,4 @@ RUN chmod -R a+x /entrypoint.sh
 
 EXPOSE 80 443
 
-CMD [ "caddy", "run", "--config", "/etc/caddy/Caddyfile" ]
+ENTRYPOINT [ "/entrypoint.sh" ]
