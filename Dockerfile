@@ -49,6 +49,10 @@ RUN rm -rf /etc/caddyprepare
 
 COPY Caddyfile /etc/caddy
 
+COPY entrypoint.sh /
+
+RUN chmod -R a+x /entrypoint.sh
+
 EXPOSE 80 443
 
 CMD [ "caddy", "run", "--config", "/etc/caddy/Caddyfile" ]
